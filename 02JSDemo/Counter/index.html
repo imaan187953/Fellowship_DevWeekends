@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #count {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            background-color: #646cff;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Counter App</h1>
+        <p id="count">0</p>
+        <button id="incrementBtn">Increment</button>
+    </div>
+
+    <script>
+        let count = localStorage.getItem("count")
+            ? parseInt(localStorage.getItem("count"))
+            : 0;
+
+        const countDisplay = document.getElementById("count");
+        countDisplay.textContent = count;
+
+        document
+            .getElementById("incrementBtn")
+            .addEventListener("click", () => {
+                count++;
+                countDisplay.textContent = count;
+
+                // Save to localStorage
+                localStorage.setItem("count", count);
+            });
+    </script>
+
+</body>
+</html>
