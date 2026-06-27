@@ -37,10 +37,8 @@ A responsive To-Do List application built with **HTML**, **CSS**, and **JavaScri
 
 ##  How to Run
 
-1. Clone this repository.
-2. Open the project folder.
-3. Open `index.html` in your browser.
+-
 
 ## Author
 
-**Iman Choudhry**
+**EMAN SAJJAD**

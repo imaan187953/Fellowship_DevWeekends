@@ -39,4 +39,4 @@ A simple counter application built with **HTML**, **CSS**, and **JavaScript**. T
 
 ##  Author
 
-**Iman Choudhry**
+**EMAN SAJJAD**
