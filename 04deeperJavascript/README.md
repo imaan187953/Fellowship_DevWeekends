@@ -25,7 +25,6 @@ deeper-javascript/
 ├── index.html
 ├── notes/
 ├── examples/
-└── assets/
 ```
 
 ##  Learning Outcomes
