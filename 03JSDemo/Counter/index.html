@@ -1,84 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Counter App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter App</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
+body{
+    background:#ff9248;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
 
-        .container {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.wrapper{
+    text-align:center;
+}
 
-        h1 {
-            margin-bottom: 20px;
-        }
+.wrapper h1{
+    color:white;
+    font-size:3rem;
+    font-weight:300;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
 
-        #count {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+.container{
+    width:420px;
+    background:#d9d9d9;
+    padding:45px;
+    border-radius:35px;
+}
 
-        button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-            border: none;
-            background-color: #646cff;
-            color: white;
-            border-radius: 5px;
-        }
+.counter-box{
+    width:210px;
+    height:140px;
+    background:#ff9248;
+    margin:0 auto 18px;
+    border-radius:25px;
 
-        button:hover {
-            opacity: 0.9;
-        }
-    </style>
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#count{
+    color:white;
+    font-size:4rem;
+    font-weight:bold;
+}
+
+button{
+    width:255px;
+    height:50px;
+    margin:10px auto;
+    display:block;
+
+    border:none;
+    border-radius:30px;
+
+    background:#ff9248;
+    color:white;
+
+    font-size:1.1rem;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+button:active{
+    transform:scale(.98);
+}
+</style>
+
 </head>
 <body>
 
+<div class="wrapper">
+
+    <h1>COUNTER</h1>
+
     <div class="container">
-        <h1>Counter App</h1>
-        <p id="count">0</p>
-        <button id="incrementBtn">Increment</button>
+
+        <div class="counter-box">
+            <p id="count">0</p>
+        </div>
+
+        <button id="incrementBtn">+ INCREMENT</button>
+        <button id="decrementBtn">- DECREMENT</button>
+
     </div>
 
-    <script>
-        let count = localStorage.getItem("count")
-            ? parseInt(localStorage.getItem("count"))
-            : 0;
+</div>
 
-        const countDisplay = document.getElementById("count");
-        countDisplay.textContent = count;
+<script>
+let count = localStorage.getItem("count")
+    ? parseInt(localStorage.getItem("count"))
+    : 0;
 
-        document
-            .getElementById("incrementBtn")
-            .addEventListener("click", () => {
-                count++;
-                countDisplay.textContent = count;
+const countDisplay = document.getElementById("count");
 
-                // Save to localStorage
-                localStorage.setItem("count", count);
-            });
-    </script>
+countDisplay.textContent = count;
+
+// Increment
+document.getElementById("incrementBtn").addEventListener("click", () => {
+    count++;
+    countDisplay.textContent = count;
+    localStorage.setItem("count", count);
+});
+
+// Decrement
+document.getElementById("decrementBtn").addEventListener("click", () => {
+    count--;
+    countDisplay.textContent = count;
+    localStorage.setItem("count", count);
+});
+</script>
 
 </body>
 </html>
