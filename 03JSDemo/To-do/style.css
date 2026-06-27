@@ -98,6 +98,80 @@ ul li span:hover{
     background: #edeef0;
 }
 
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .todo-app {
+        width: 90%;
+        margin: 60px auto;
+        padding: 30px 20px;
+    }
+
+    .todo-app h2 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .todo-app {
+        width: 95%;
+        margin: 40px auto;
+        padding: 25px 15px;
+    }
+
+    .todo-app h2 {
+        font-size: 22px;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+        background: transparent;
+        padding: 0;
+        gap: 15px;
+    }
+
+    input {
+        width: 100%;
+        background: #edeef0;
+        border-radius: 30px;
+        padding: 15px 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 12px 8px 12px 45px;
+    }
+
+    ul li::before {
+        width: 24px;
+        height: 24px;
+        top: 13px;
+    }
+
+    ul li span {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
 
 
 
