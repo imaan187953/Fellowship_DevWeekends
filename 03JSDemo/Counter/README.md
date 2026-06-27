@@ -10,15 +10,15 @@ A simple counter application built with **HTML**, **CSS**, and **JavaScript**. T
 
 > **Note:** Save your screenshot as `counter.png` inside an `images` folder.
 
-## ✨ Features
+##  Features
 
-- ➕ Increment the counter
-- ➖ Decrement the counter
-- 💾 Save counter value using Local Storage
-- 📱 Responsive and modern UI
-- ⚡ Built with Vanilla JavaScript
+-  Increment the counter
+-  Decrement the counter
+-  Save counter value using Local Storage
+-  Responsive and modern UI
+-  Built with Vanilla JavaScript
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3
@@ -33,10 +33,10 @@ A simple counter application built with **HTML**, **CSS**, and **JavaScript**. T
 - Functions
 - Conditional Logic
 
-## 🚀 How to Run
+## How to Run
 
 -https://task3part1counter.netlify.app/
 
-## 👩‍💻 Author
+##  Author
 
 **Iman Choudhry**
