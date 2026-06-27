@@ -5,7 +5,7 @@ A responsive quiz application built with **HTML**, **CSS**, and **JavaScript**. 
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="imag/quizlayout.png" alt="ML Quiz Challenge Screenshot" width="600">
+  <img src="img/quizlayout.png" alt="ML Quiz Challenge Screenshot" width="600">
 </p>
 
 > **Note:** Save your project screenshot as `quiz.png` inside the `images` folder.
