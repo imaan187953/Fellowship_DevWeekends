@@ -1,0 +1,36 @@
+.destinations {
+  padding: 4rem 0;
+}
+
+.destinations__header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.destinations__header .section-subtitle {
+  margin-top: 0.25rem;
+}
+
+.destinations__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.destinations__cta {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 62rem) {
+  .destinations__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 30rem) {
+  .destinations__grid {
+    grid-template-columns: 1fr;
+  }
+}
