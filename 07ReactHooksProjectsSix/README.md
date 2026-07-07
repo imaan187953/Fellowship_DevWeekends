@@ -34,7 +34,7 @@ A simple application that generates different types of colors.
 
 ### Screenshot
 
-![Random Color Generator](./screenshots/random color.png)
+![Random Color Generator](./screenshots/randomcolor.png)
 
 ---
 
