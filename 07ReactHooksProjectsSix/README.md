@@ -15,6 +15,8 @@ An interactive accordion component with two different modes:
 - Toggle questions by clicking on their titles.
 - Uses React state to manage expanded items.
 
+-https://accordiontask.netlify.app/
+
 ### Screenshot
 
 ![Accordion](./screenshots/simpleaccordion.png)
@@ -32,6 +34,8 @@ A simple application that generates different types of colors.
 - Generate Completely Random Colors
 - Instantly updates the page background
 
+-https://randomcolortask.netlify.app/
+
 ### Screenshot
 
 ![Random Color Generator](./screenshots/randomcolor.png)
@@ -48,6 +52,8 @@ An interactive star rating system.
 - Selected stars are highlighted
 - Displays the current rating
 - Built using React state
+
+-https://ratingstarstask.netlify.app/
 
 ### Screenshot
 
@@ -67,6 +73,8 @@ A simple image carousel built with React.
 - Image counter
 - Responsive layout
 
+-https://imagesslidertask.netlify.app/
+
 ### Screenshot
 
 ![Image Slider](./screenshots/imageSlider.png)
@@ -84,6 +92,8 @@ A product listing application with dynamic loading.
 - Load More button
 - Automatically stops when all products are loaded
 
+-https://loadmoredatatask.netlify.app/
+
 ### Screenshot
 
 ![Load More](./screenshots/loadmore.png)
@@ -100,6 +110,8 @@ A recursive tree view component for displaying nested menus.
 - Supports multiple levels of nesting
 - Dynamic rendering using recursion
 - Ideal for file explorers or navigation menus
+
+-http://treeviewtask.netlify.app/
 
 ### Screenshot
 
