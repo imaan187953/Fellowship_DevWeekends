@@ -1,0 +1,31 @@
+import { useState } from "react";
+
+export default function App() {
+
+const [rating, setRating] = useState(0);
+    
+   return (
+    <div>
+      <h3>Star Rating Component</h3>
+
+      <p>
+        {rating > 0
+          ? `You rated this ${rating}/5 stars`
+          : "Click on a star to rate"}
+      </p>
+
+      {[1, 2, 3, 4, 5].map((star) => (
+        <span
+          key={star}
+          onClick={() => setRating(star)}
+          style={{
+            cursor: "pointer",
+            fontSize: "40px",
+            color: star <= rating ? "gold" : "gray",
+          }}
+        >
+          ★
+        </span>
+      ))}
+    </div> )
+}
