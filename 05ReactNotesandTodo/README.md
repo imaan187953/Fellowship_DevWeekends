@@ -60,9 +60,6 @@ This repository contains my learning notes for React fundamentals.
 
 ---
 
-## Purpose
-
-The purpose of these notes is to build a strong foundation in React and understand how React components, state, and rendering work.
 
 ## Technologies
 
