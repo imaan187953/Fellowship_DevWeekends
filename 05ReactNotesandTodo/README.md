@@ -51,39 +51,12 @@ This repository contains my learning notes for React fundamentals.
 ## Topics Covered
 
 ### 1. JSX
-- Understanding JSX syntax
-- Writing HTML-like code inside JavaScript
-- JSX expressions
-
 ### 2. Functional Components
-- Creating reusable components
-- Component structure
-- Importing and exporting components
-
 ### 3. Props
-- Passing data from parent to child components
-- Making components reusable
-- Accessing props inside components
-
 ### 4. useState Hook
-- Managing component state
-- Updating UI dynamically
-- Handling user input
-
 ### 5. useEffect Hook
-- Performing side effects
-- Running code after component rendering
-- Dependency array usage
-
 ### 6. Conditional Rendering
-- Rendering UI based on conditions
-- Using ternary operators
-- Using logical AND (`&&`)
-
 ### 7. List Rendering
-- Rendering arrays using `.map()`
-- Using unique keys
-- Displaying dynamic data
 
 ---
 
