@@ -1,29 +1,36 @@
-import React, {useState} from 'react'
-import {useDispatch} from 'react-redux'
-import {addTodo} from '../features/todo/todoSlice' 
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addTodo } from "../features/todo/todoSlice";
 
 function AddTodo() {
+  const [input, setInput] = useState("");
 
-    const [input, setInput] = useState('')
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-    const addTodoHandler = (e) => {
-        e.preventDefault()
-        dispatch(addTodo(input))
-        setInput('')
+  const addTodoHandler = (e) => {
+    e.preventDefault();
+
+    const trimmedInput = input.trim();
+
+    if (!trimmedInput) {
+      alert("Todo cannot be empty.");
+      return;
     }
 
+    dispatch(addTodo(trimmedInput));
+    setInput("");
+  };
+
   return (
-    <form 
-      onSubmit={addTodoHandler} 
+    <form
+      onSubmit={addTodoHandler}
       className="flex gap-3 mt-8 w-full max-w-xl mx-auto"
     >
-
       <input
         type="text"
         className="
         flex-1
-        bg-gray-900 
+        bg-gray-900
         text-white
         border border-gray-700
         rounded-xl
@@ -58,9 +65,8 @@ function AddTodo() {
       >
         Add Todo
       </button>
-
     </form>
-  )
+  );
 }
 
-export default AddTodo
+export default AddTodo;
