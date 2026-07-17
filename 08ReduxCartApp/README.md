@@ -1,16 +1,60 @@
-# React + Vite
+# Redux Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A shopping cart application built using **React**, **Redux Toolkit**, and **Tailwind CSS**. The application fetches products from an external API and allows users to manage their cart with persistent state and theme preferences.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Fetch products from an external API
+* Add products to the shopping cart
+* Increase and decrease product quantity
+* Remove products from the cart
+* Calculate the total cart price
+* Responsive product grid
+* Cart displayed as a dropdown popup
+* Light and Dark mode toggle
+* Theme persistence using `localStorage`
+* Cart persistence after page refresh using `localStorage`
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Redux Toolkit
+* React Redux
+* Tailwind CSS
+* JavaScript (ES6+)
+* Font Awesome
 
-## Expanding the ESLint configuration
+## API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Product data is fetched from:
+
+```text
+https://api.escuelajs.co/api/v1/products
+```
+
+## Project Structure
+
+```text
+src/
+├── app/
+├── components/
+├── context/
+├── features/
+│   ├── cart/
+│   └── products/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Future Improvements
+
+* Product search
+* Category filtering
+* Product details page
+* Checkout functionality
+* User authentication
+
+## Author
+
+**Eman Sajjad**
