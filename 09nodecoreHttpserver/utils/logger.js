@@ -1,7 +1,13 @@
 function logRequest(req) {
-    console.log(
-        `[${req.method}] ${req.url} - ${new Date().toLocaleTimeString()}`
-    );
+    const time = new Date().toLocaleString();
+
+    console.log(`
+=================================
+Time   : ${time}
+Method : ${req.method}
+Route  : ${req.url}
+=================================
+`);
 }
 
 module.exports = logRequest;
