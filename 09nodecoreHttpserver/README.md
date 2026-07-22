@@ -42,7 +42,54 @@ node-http-server/
 | `/read` | Read file |
 | `/write` | Append to file |
 | `/stream` | Stream file |
-| `/user?name=Eman` | Query parameter example |
+
+# 📸 Screenshots
+
+## Home Route
+
+![Home](./screenshots/home.png)
+
+---
+
+## About Route
+
+![About](./screenshots/about.png)
+
+---
+
+## Status Route
+
+![Status](./screenshots/status.png)
+
+---
+
+## Read File
+
+![Read](./screenshots/read.png)
+![ReadTerminal](./screenshots/read1.png)
+
+
+---
+
+## Write File
+
+![Write](./screenshots/write.png)
+![WriteTerminal](./screenshots/write1.png)
+
+---
+
+## Stream File
+
+![Stream](./screenshots/stream.png)
+![StreamTerminal](./screenshots/stream1.png)
+
+---
+
+## Stats Endpoint
+
+![Stats](./screenshots/stats.png)
+
+---
 
 ## Technologies Used
 
@@ -51,13 +98,6 @@ node-http-server/
 - File System (fs)
 - Streams
 - Events
-
-## Run the Project
-
-```bash
-npm install
-node server.js
-```
 
 Server:
 
