@@ -15,9 +15,9 @@ function fileRoute(req, res) {
     }
 
     if (req.url === "/stream") {
-    console.log("✅ /stream route matched");
-    return streamFile(req, res);
-}
+        console.log("✅ /stream route matched");
+        return streamFile(req, res);
+    }
 
     if (req.url.startsWith("/user")) {
 

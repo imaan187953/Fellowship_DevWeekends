@@ -2,6 +2,16 @@
 
 A mini backend project built using Node.js Core Modules without Express.
 
+## Node.js Event Loop
+
+This project demonstrates the asynchronous nature of Node.js using:
+
+- fs/promises
+- createReadStream()
+- EventEmitter
+
+The Event Loop allows Node.js to perform non-blocking I/O operations by offloading file system operations to the operating system and executing callbacks once they complete.
+
 ## Features
 
 - HTTP Server using `http`

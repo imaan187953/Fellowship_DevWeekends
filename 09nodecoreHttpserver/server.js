@@ -34,8 +34,8 @@ const server = http.createServer((req, res) => {
         status(req, res);
     }
     else if (req.url === "/stats") {
-    stats(req, res);
-}
+        stats(req, res);
+    }
     else if (fileRoute(req, res) !== false) {
         // The file route handled the request.
     }
